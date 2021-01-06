@@ -19,3 +19,10 @@ A me piace leggere soprattutto romanzi fantasy oltre che leggere ed informarmi s
 
 ### Palette di colori
 Una possibile palette potrebbe essere basata sul marrone o sul blu- da rivedere
+
+### Sezioni
+Header
+HeroSection
+Contatti
+Bio
+Footer

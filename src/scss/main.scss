@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=MedievalSharp:400,700');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope:400');
+
+
+$family-primary: "Berkshire Swash";
+$family-secondary: "Annie Use Your Telescope";
+
+$charcoal: #36454F;
+$charcoal-invert: findColorInvert($charcoal);
+$santorini: #416d83;
+$santorini-invert: findColorInvert($santorini);
+$sand: #c2b280;
+$sand-invert: findColorInvert($sand);
+$cobalto: #0047ab;
+$cobalto-invert: findColorInvert($cobalto);
+$dark: $charcoal;
+$info: $santorini;
+$danger: $sand;
+$success: $cobalto;
+$custom-colors: ("charcoal": ($charcoal, $charcoal-invert), "santorini": ($santorini, santorini-invert));
+
+$navbar-height: 4rem;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+
+
+/* Custom CSS */
+/*
+.wallpaper {
+    background-color: #ba642b;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23d4a826' fill-opacity='0.19'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+*/
+
+.wallpaper {
+    background-image: url("../img/wall_o.jpg");
+    background-repeat: repeat;
+}
+
+.img-white {
+    background-color: rgb(216, 216, 216);
+    border:12px solid rgb(135, 118, 11);
+    border-radius: 8px;
+
+}
+
+.char {
+    background-color: $sand;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #000000;
+    border: 2px solid $charcoal;
+    .card-image {
+        border-bottom: 2px solid $charcoal;
+    }
+    .card-content{
+        background-color: white;
+        height: 100%;
+        .title {
+            font-style: italic;
+            font-size: 1.3rem;
+        }
+        hr {
+            border: 1px solid $charcoal;
+        }
+        .bio {
+            font-family: $family-secondary;
+            font-size: 1.3rem;
+        }
+
+    }
+    img {
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+
+.is-horizontal-center {
+    justify-content: center;
+}
+
+.intro h1{
+    font-size: 3em;
+}
+
+.intro h2{
+    font-size: 2em;
+}
+
+.intro p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar-item {
+    font-size: 1.5em;
+}
+
+/* Progress Bar Skills */
+.progress>svg {
+    height: 100%;
+    display: block;
+}

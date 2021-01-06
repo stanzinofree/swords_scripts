@@ -1,0 +1,24 @@
+{
+  "name": "progetto",
+  "version": "1.0.0",
+  "description": "Questo progetto ha lo scopo di illustrare le mie capacità di creare un sito web sfruttando le conoscenze acquisite seguendo i tutorial consigliati. Il presente documento andrà ad illustrare le diverse fasi di realizzazione del progetto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@vizuaalog/bulmajs": "^0.12.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.32.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "progressbar.js": "^1.1.0"
+  }
+}
