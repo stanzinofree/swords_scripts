@@ -2,130 +2,84 @@
 import Bulma from '@vizuaalog/bulmajs';
 import ProgressBar from 'progressbar.js';
 
-var dwarfLevel = new ProgressBar.Line('#dwarfLevel', {
-  easing: 'easeInOut',
-  duration: 1400,
+function defineBar(name, color){
+    let obj = new ProgressBar.Line(`#${name}`, {
+      easing: 'easeInOut',
+      duration: 1400,
+      color: color,
+      svgStyle: {width: '100%', height: '100%'}
+    });
+    return obj;
+}
 
+let dwarfCOL = '#3D3D3D';
+let wizardCOL = '#66285b';
+let knightCOL = '#7e0d00';
+let archerCOL = '#296307';
+let hackerCOL = '#0e4353';
+
+let dwarfLevel = defineBar('dwarfLevel', dwarfCOL);
+let dwarf1 = defineBar('dwarf1', dwarfCOL);
+let dwarf2 = defineBar('dwarf2', dwarfCOL);
+let dwarf3 = defineBar('dwarf3', dwarfCOL);
+
+let wizardLevel = defineBar('wizardLevel', wizardCOL);
+let wizard1 = defineBar('wizard1', wizardCOL);
+let wizard2 = defineBar('wizard2', wizardCOL);
+let wizard3 = defineBar('wizard3', wizardCOL);
+
+let knightLevel = defineBar('knightLevel', knightCOL);
+let knight1 = defineBar('knight1', knightCOL);
+let knight2 = defineBar('knight2', knightCOL);
+let knight3 = defineBar('knight3', knightCOL);
+
+let archerLevel = defineBar('archerLevel', archerCOL);
+let archer1 = defineBar('archer1', archerCOL);
+let archer2 = defineBar('archer2', archerCOL);
+let archer3 = defineBar('archer3', archerCOL);
+
+let hackerLevel = defineBar('hackerLevel', hackerCOL);
+let hacker1 = defineBar('hacker1', hackerCOL);
+let hacker2 = defineBar('hacker2', hackerCOL);
+let hacker3 = defineBar('hacker3', hackerCOL);
+
+
+document.querySelector('#hacker_modal_button').addEventListener('click', function(e) {
+    var modalTwo = Bulma('#hacker_modal').modal();
+    modalTwo.open();
 });
 
-var dwarfExp = new ProgressBar.Line('#dwarfExp', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  svgStyle: {width: '100%', height: '100%'}
-});
 
-var dwarf1 = new ProgressBar.Line('#dwarf1', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var dwarf2 = new ProgressBar.Line('#dwarf2', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var dwarf3 = new ProgressBar.Line('#dwarf3', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var wizardLevel = new ProgressBar.Line('#wizardLevel', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var wizardExp = new ProgressBar.Line('#wizardExp', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var wizard1 = new ProgressBar.Line('#wizard1', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var wizard2 = new ProgressBar.Line('#wizard2', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var wizard3 = new ProgressBar.Line('#wizard3', {
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var warriorLevel = new ProgressBar.Line('#warriorLevel', {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var warriorExp = new ProgressBar.Line('#warriorExp', {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var archerLevel = new ProgressBar.Line('#archerLevel', {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#0047ab',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'}
-});
-
-var archerExp = new ProgressBar.Line('#archerExp', {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#c2b280',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'}
-});
-
+var ShellStyle = "color:#7d92fb;font-weight:bold;";
+var BrandStyle = "font-size:34px; font-weight:200; letter-spacing:0.02em; line-height:1.4em; font-family:helvetica,arial; color:rgba(0,0,0,0.9);";
+var AlexStyle = "font-size:21px; font-weight:200; letter-spacing:0.2em; line-height:1.4em; font-family:helvetica,arial; color:rgba(0,0,25,0.5);";
+var shell = "\n%c \n     ###    ##       ######## ##     ##          ######  ##     ## ######## ##       ##       \n    ## ##   ##       ##        ##   ##          ##    ## ##     ## ##       ##       ##       \n   ##   ##  ##       ##         ## ##           ##       ##     ## ##       ##       ##       \n  ##     ## ##       ######      ###    #######  ######  ######### ######   ##       ##       \n  ######### ##       ##         ## ##                 ## ##     ## ##       ##       ##       \n  ##     ## ##       ##        ##   ##          ##    ## ##     ## ##       ##       ##       \n  ##     ## ######## ######## ##     ##          ######  ##     ## ######## ######## ######## \n";
+function shellView(){
+console.log(shell, ShellStyle);
+console.log("%cEasterEgg Trovato!!!!!", BrandStyle), console.log("%cCustom Shell by Alessandro Middei v. 1.0", AlexStyle), console.log("%c", "font-size:34px; line-height:1.4em;");
+}
 
 
 window.onload = function onLoad() {
+    shellView();
     dwarfLevel.animate(0.7);
-    dwarfExp.animate(0.9);
     dwarf1.animate(0.7);
     dwarf2.animate(0.8);
     dwarf3.animate(0.8);
     wizardLevel.animate(0.6);
-    wizardExp.animate(0.5);
     wizard1.animate(0.6);
     wizard2.animate(0.4);
-    wizard3.animate(0.8);
-    warriorLevel.animate(0.8);
-    warriorExp.animate(0.6);
-    archerLevel.animate(0.6);
-    archerExp.animate(0.7);
+    wizard3.animate(0.7);
+    knightLevel.animate(0.8);
+    knight1.animate(0.9);
+    knight2.animate(0.7);
+    knight3.animate(0.7);
+    archerLevel.animate(0.5);
+    archer1.animate(0.6);
+    archer2.animate(0.6);
+    archer3.animate(0.6);
+    hackerLevel.animate(0.6);
+    hacker1.animate(0.6);
+    hacker2.animate(0.8);
+    hacker3.animate(0.7);
 };

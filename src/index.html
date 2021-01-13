@@ -15,8 +15,7 @@
                 <img src="./img/alex.png" alt="La mia faccia cartoon">
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                data-target="navBar">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navBar">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -25,7 +24,7 @@
 
         <div id="navBar" class="navbar-menu navbar-end">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="/">
                     Home
                 </a>
 
@@ -39,16 +38,16 @@
                     </a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#dwarf">
+                        <a class="navbar-item" href="#DWARF">
                             Nano System Integrator
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="#WIZARD">
                             Mago Sviluppatore
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="#kNIGHT">
                             Guerriero SysAdmin
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="#ARCHER">
                             Ranger Responsabile e Analista
                         </a>
                     </div>
@@ -71,44 +70,49 @@
         </div>
     </nav>
     <div class="background y-mandatory">
-    <section class="hero is-fullheight slide" id="intro">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile-4">
-                        <img src="./img/alex.png" alt="La mia faccia cartoon" class="img-white">
-                    </div>
-                    <div class="tile-8">
-                        <div class="section intro">
-                            <h1 class="title intro">
-                                Chips & Scripts
-                            </h1>
-                            <h2 class="subtitle intro">
-                                Nerd e Fantasy al servizio del mondo IT
-                            </h2>
-                            <hr>
-                            <p class="is-family-secondary">Ciao, sono Alessandro, e vorrei parlarvi di me unendo le mie
-                                grandi passioni vale a dire la letteratura fantasy ed il mondo IT.</p>
-                            <p class="is-family-secondary">Parodiando il celeberrimo <span>"Dungeons & Dragons"</span>
-                                ho deciso di realizzare un portfolio con tanto di eroi e relative peculiarità applicate
-                                al mondo IT che mettano in evidenza le mie attitudini sfruttando i personaggi.</p>
+        <section class="hero is-fullheight slide" id="intro">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile-4">
+                            <img src="./img/alex.png" alt="La mia faccia cartoon" class="img-white">
+                        </div>
+                        <div class="tile-8">
+                            <div class="section intro">
+                                <h1 class="title intro">
+                                    Chips & Scripts
+                                </h1>
+                                <h2 class="subtitle intro">
+                                    Nerd e Fantasy al servizio del mondo IT
+                                </h2>
+                                <hr>
+                                <p class="is-family-secondary">Ciao, sono Alessandro, e vorrei parlarvi di me unendo le
+                                    mie
+                                    grandi passioni vale a dire la letteratura fantasy ed il mondo IT.</p>
+                                <p class="is-family-secondary" id="hacker_modal_button">Parodiando il celeberrimo
+                                    <span>"Dungeons &
+                                        Dragons"</span>
+                                    ho deciso di realizzare un portfolio con tanto di eroi (ed Easter Egg) e relative peculiarità
+                                    applicate
+                                    al mondo IT che mettano in evidenza le mie attitudini sfruttando i personaggi.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="hero is-fullheight slide" id="dwarf">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile mx-1">
-                        <div class="card charDW">
-                            <div class="card-image">
-                                <div class="media">
+        </section>
+        <section class="hero is-fullheight slide personaggio" id="DWARF">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile is-5">
+                            <div class="card">
+                                <div class="card-image">
+                                    <div class="media charDW">
                                         <div class="media-left">
                                             <figure class="image is-128x128">
-                                            <img src="./img/char/dwarf.jpg" alt="Nano System Integrator" class="CharAvatar">
+                                                <img src="./img/char/dwarf.jpg" alt="Nano System Integrator"
+                                                    class="CharAvatar">
                                             </figure>
                                         </div>
                                         <div class="media-content">
@@ -116,335 +120,347 @@
                                             <p class="subtitle is-2">System Integrator</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="tile is-father">
+                                            <div class="tile is-vertical is-child is-5 biog">
+                                                <h6 class="tratti">QUALITA'</h6>
+                                                <ul>
+                                                    <li><i class="fad fa-axe-battle"></i> Tenace</li>
+                                                    <li><i class="fad fa-axe-battle"></i> Visionario</li>
+                                                    <li><i class="fad fa-axe-battle"></i> Arguto</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tile is-vertical is-child dwarfBars">
+                                                <h6 class="tratti">STATISTICHE</h6>
+                                                <div id="dwarfLevel">Livello Globale 7/10 </div>
+                                                <div id="dwarf1">Studio Hardware 7/10 </div>
+                                                <div id="dwarf2">Sviluppo Script 8/10 </div>
+                                                <div id="dwarf3">Sviluppo API 8/10 </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="caratteristiche">
+                                            <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                            Testardo, gran lavoratore infaticabile e dedito
+                                            alla scoperta e alla reingegnerizzazione dei materiali e delle nuove
+                                            tecnologie
+                                            per agevolare il lavoro, sfruttare meglio le risorse e cercare di
+                                            superare i limiti ogni volta.
+                                        </div>
+                                        <article class="message charDW quote">
+                                            <div class="message-body">
+                                                Datemi un cacciavite e una shell e quell'aggeggio non
+                                                avrà più segreti
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tile is-8 description">
+                            <div class="explain">
+                                <p>In quanto sistemista amante dello sviluppo software mi sono sempre appassionato alle
+                                    sfide di automazione (che spesso vengono considerate sviluppo di serire B) oppure
+                                    all'analisi della semplificazione dei processi sia in ambito interno, per il
+                                    monitoring dei nostri server, che per i clienti, andando a risolvere l'annoso
+                                    problema della prolificazione dei softwares monofunzione.<br>Con il tempo
+                                    appassionandomi anche alle nuove tecnologie e ai nuovi linguaggi di programmazione
+                                    ho iniziato a cercare sfide sempre più complesse dedicandomi alla scrittura di
+                                    backend per l'esposizione di API per far interagire tra loro hardware eterogenei o
+                                    softwares che non dialogano nativamente tra di loro, ricorrendo spesso al reverse
+                                    engineering. Proprio per l'amore in questo campo vedo la formazione continua ed il
+                                    continuo sperimentare come una necessità di sopravvivenza e quindi spesso mi dedico,
+                                    nel tempo libero, a ricercare nuove tipologie di hardware e nuovi linguaggi (o
+                                    frameworks) di programmazione.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-fullheight slide personaggio" id="WIZARD">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile mx-1">
+                            <div class="tile is-vertical is-5">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <div class="media charWZ">
+                                            <div class="media-left">
+                                                <figure class="image is-128x128">
+                                                    <img src="./img/char/wizard.jpg" alt="Mago Sviluppatore"
+                                                        class="CharAvatar">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-1">Mago </p>
+                                                <p class="subtitle is-2">Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tile is-father">
+                                                <div class="tile is-vertical is-child is-5 biog">
+                                                    <h6 class="tratti">QUALITA'</h6>
+                                                    <ul>
+                                                        <li><i class="fad fa-wand-magic"></i> Studioso</li>
+                                                        <li><i class="fad fa-wand-magic"></i> Intuitivo</li>
+                                                        <li><i class="fad fa-wand-magic"></i> Paziente</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tile is-vertical is-child dwarfBars">
+                                                    <h6 class="tratti">STATISTICHE</h6>
+                                                    <div id="wizardLevel">Livello Globale 6/10 </div>
+                                                    <div id="wizard1">Studio Hardware 6/10 </div>
+                                                    <div id="wizard2">Sviluppo Script 4/10 </div>
+                                                    <div id="wizard3">Sviluppo API 7/10 </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="caratteristiche">
+                                                <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                                Paziente, studioso, metodico, il tempo non ha importanza se paragonato alla sapienza.
+                                                Riesce tramite fomule magiche a trasfmorare i pensieri in oggetti reali.
+                                            </div>
+                                            <article class="message charWZ quote">
+                                                <div class="message-body">
+                                                    Tutto quello che la mente riesce ad immaginare può essere creato.
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tile is-8 description">
+                                <div class="explain">
+                                    <p>
+                                        Sin da piccolo, quando con mio padre digitavamo infinite stringhe di codice in Basic sulla tastiera dello Spectrum, ero attratto dalla magia che portava quelle stringhe di testo assurde e astruse a trasformarsi in coniglietti saltellanti sullo schermo. Negli anni questa passione mi ha portato ad approfondire da autodidatta il mondo dello sviluppo software partendo dalle macro di Office per calcolare le classifiche del fantacalcio a dei veri e propri gestionali Access Based per gestire la raccolta dati di un call center.
+
+La sensazione di potenza quando i desideri dei clienti prendono forma e diventano la loro soddisfazione ancora oggi mi lascia contento come un bambino in un negozio di giocattoli e quindi per continuare a stupire continuo a studiare ed informarmi sulle tendenze, sull'evoluzione dei linguaggi e continuo a sperimentare e sbagliare per migliorare continuamente.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-fullheight slide personaggio" id="kNIGHT">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile mx-1">
+                            <div class="tile is-vertical is-5">
+                                <div class="card charDW">
+                                    <div class="card-image">
+                                        <div class="media charKN">
+                                            <div class="media-left">
+                                                <figure class="image is-128x128">
+                                                    <img src="./img/char/knight.jpg" alt="Guerriero SysAdmin">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-1">Guerriero </p>
+                                                <p class="subtitle is-2">Sysadmin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tile is-father">
+                                                <div class="tile is-vertical is-child is-5 biog">
+                                                    <h6 class="tratti">QUALITA'</h6>
+                                                    <ul>
+                                                        <li><i class="fad fa-swords"></i> Metodico</li>
+                                                        <li><i class="fad fa-swords"></i> Infaticabile</li>
+                                                        <li><i class="fad fa-swords"></i> Resiliente</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tile is-vertical is-child dwarfBars">
+                                                    <h6 class="tratti">STATISTICHE</h6>
+                                                    <div id="knightLevel">Livello Globale 8/10 </div>
+                                                    <div id="knight1">Configurazione 9/10 </div>
+                                                    <div id="knight2">Hardening 7/10 </div>
+                                                    <div id="knight3">Debug 7/10 </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="caratteristiche">
+                                                <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                                Umile e infaticabile è sempre al servizio di chi ha bisogno e dei più deboli.
+                                                Sempre alla ricerca del male da sconfiggere o di una principessa da salvare anche se questo vuol dire non riposarsi mai per giorni.
+                                            </div>
+                                            <article class="message charKN quote">
+                                                <div class="message-body">
+                                                    Non importa chi tu sia o che cosa tu abbia fatto ma se hai in pericolo io ci sarò.
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tile is-8 description">
+                                <div class="explain">
+                                    <p>
+                                        Appassionato e caparbio, da sempre mi occupo dell'installazione e configurazione dei pc sia in ambito desktop che server, come per gli altri aspetti dell'informatica continuo ad informarmi e formarmi sulle nuove tecnologie, sui nuovi sistemi operativi e sulle prassi di sicurezza che possono aiutare a prevenire problemi di compromissione o di performance sui dispositivi.
+
+Windows, Gnu\Linux o MacOS non fa differenza, una volta che si sono apprese le basi e si ha una shell non ci sono sistemi operativi che non possano essere installati, configurati e manutenuti, attraverso analisi dei logs e dei processi con l'aggiunta di script che aiutino nelle quotidiane e ripetitive operazioni.
+
+Con pazienza e disponibilità sono sempre al servizio degli utenti con la consapevolezza che se hanno bisogno di un supporto vuol dire che reputano la mia professionalità rilevante e utile non giudicando le loro scelte o i loro comportamenti (in fatto di navigazione e acquisti di software o hardware) ma cerco solo di aiutarli a trarre il meglio da quello che hanno a disposizione.
+
+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-fullheight slide personaggio" id="ARCHER">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile mx-1">
+                            <div class="tile is-vertical is-5">
+                                <div class="card charDW">
+                                    <div class="card-image">
+                                        <div class="media charAR">
+                                            <div class="media-left">
+                                                <figure class="image is-128x128">
+                                                    <img src="./img/char/archer.jpg"
+                                                        alt="Ranger Analista e Responsabile IT" class="CharAvatar">
+                                                </figure>
+                                            </div>
+                                            <div class="media-content">
+                                                <p class="title is-1">Ranger </p>
+                                                <p class="subtitle is-2">Analista e Responsabile IT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <div class="tile is-father">
+                                                <div class="tile is-vertical is-child is-5 biog">
+                                                    <h6 class="tratti">QUALITA'</h6>
+                                                    <ul>
+                                                        <li><i class="fad fa-bow-arrow"></i> Ascolto</li>
+                                                        <li><i class="fad fa-bow-arrow"></i> Progettazione</li>
+                                                        <li><i class="fad fa-bow-arrow"></i> Organizzazione</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tile is-vertical is-child dwarfBars">
+                                                    <h6 class="tratti">STATISTICHE</h6>
+                                                    <div id="archerLevel">Livello Globale 5/10 </div>
+                                                    <div id="archer1">Comunicazione 6/10 </div>
+                                                    <div id="archer2">Pianificazione 6/10 </div>
+                                                    <div id="archer3">Progettazione 6/10 </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="caratteristiche">
+                                                <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                                Figura molto sottovalutata, silenziosa, esperta del territorio in cui agisce. Ama pianificare ogni dettaglio sfruttando la conoscenza dei propri compagni e
+                                                della conoscenza dell'ambiente che lo circonda per capovolgere l'esito di ogni battaglia.
+                                            </div>
+                                            <article class="message charAR quote">
+                                                <div class="message-body">
+                                                    Non importa quanto sia difficile la sfida, pianificando bene ogni cosa può essere affrontata.
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tile is-8 description">
+                                <div class="explain">
+                                    <p>
+                                        Avendo da sempre un carattere mite ma deciso, nel tempo in ogni lavoro, divento piano piano un punto fermo nell'ambito delle opinioni da tenere in considerazione sulla gestione e sulle scelte da fare sia progettuali che pratiche. In particolare in questo ultimo lavoro ho ricevuto l'incarico di gestire il personale IT per le assistenze esterne e per la gestione dell'infrastruttura interna.
+
+Avendo anche passione per l'aspetto di sviluppo e per le nuove tecnologie occupo anche il ruolo di progettazione e scelta dei "side projects" per la parte ricerca e sviluppo oltre che per la parte di analisi e progettazione delle soluzioni di integrazione per i nostri clienti.
+
+Sicuramente il carattere mite e tendente all'ascolto fanno si che riesca a cogliere più dettagli rispetto all'ascoltatore comune e unito alla riflessività e alla capacità di analizzare ogni aspetto dei contesti, a mo di intelligenza artificiale, analizzando i possibili risvolti di ogni scelta vengo tenuto in considerazione durante l'esposizione delle mie opinioni poichè frutto di lunghi e meditati ragionamenti.
+
+</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="hacker_modal" class="modal">
+            <di class="modal-background"></di>
+            <div class="modal-card">
+
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Easter EGG</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <header class="modal-card-body" id="HACKER">
+                         <div class="card charDW">
+                            <div class="card-image">
+                                <div class="media charAR">
+                                    <div class="media-left">
+                                        <figure class="image is-128x128">
+                                            <img src="./img/char/hacker.jpg" alt="Ethical Hacker"
+                                                class="CharAvatar">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-1">Hacker </p>
+                                        <p class="subtitle is-2">Nerd Smanettone</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-content">
                                 <div class="content">
                                     <div class="tile is-father">
-                                        <div class="tile is-vertical is-child biog">
-                                            Il Nano è un personaggio che si occupa di ingegneria pratica, lavora sodo nelle miniere in lavori essenziali ma che nessuno vuole mai fare e con il suo ingegno e la sua arguzia
-                                            riesce a trovare sempre nuovi modi per riparare i materiali e le tecnologie con cui si confronta approtando modifiche per migliorarne il funzionamento o creare nuovi apparati
-                                            che ne esaltino le caratteristiche.
+                                        <div class="tile is-vertical is-child is-5 biog">
+                                            <h6 class="tratti">QUALITA'</h6>
+                                            <ul>
+                                                <li><i class="fad fa-raygun"></i> Introverso</li>
+                                                <li><i class="fad fa-raygun"></i> Nerd</li>
+                                                <li><i class="fad fa-raygun"></i> Smanettone</li>
+                                            </ul>
                                         </div>
                                         <div class="tile is-vertical is-child dwarfBars">
-                                            <div id="dwarfLevel">Livello Globale 7/10 </div>
-                                            <div id="dwarfExp">Confidenza Attuale 9/10 </div>
-                                            <div id="dwarf1">Studio Hardware 7/10 </div>
-                                            <div id="dwarf2">Sviluppo Script 8/10 </div>
-                                            <div id="dwarf3">Sviluppo API 8/10 </div>
+                                            <h6 class="tratti">STATISTICHE</h6>
+                                            <div id="hackerLevel">Livello Globale 6/10 </div>
+                                            <div id="hacker1">Nerdosità 6/10 </div>
+                                            <div id="hacker2">Smanettosità 8/10 </div>
+                                            <div id="hacker3">Sicurezza 7/10 </div>
                                         </div>
                                     </div>
                                     <hr>
-                                    <div class="bio">
-                                        In quanto sistemista amante dello sviluppo mi sono sempre appassionato alle sfide di automazione che spesso vengono considerate sviluppo di serire B
-                                        oppure dell'analisi della semplificazione dei processi sia in ambito interno,
-                                        per il monitoring dei nostri server, che per i clienti, andando a risolvere l'annoso problema della prolificazione dei softwares monofunzione.
-                                        Con il tempo appassionandomi anche alle nuove tecnologie e ai nuovi linguaggi di programmazione o iniziato a cercare sfide sempre più complesse dedicandomi
-                                        alla scrittura di API per far interagire tra loro hardware di vendor diversi o che in fase di progettazione non erano stati pensati per lo scambio dati con protocolli diversi
-                                        o oggetti diversi, riccorddendo spesso al reverse engineering.
-                                        Proprio per l'amore in questo campo vedo la formazione continua ed il continuo sperimentare come una necessità di sopravvivenza e quindi spesso mi dedico nel tempo libero
-                                        a ricercare nuove tipologie di hardware o a scrivere plugin o interi software per velocizzare alcune azioni ripetitive o far comunicare i nuovi devices che andiamo a testare dai clienti (scrittura di softwares o script per l'integrazione).
+                                    <div class="caratteristiche">
+                                        <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                        Nerd e Smanettone, cosa dire di più? Amante dei generi Fantasy, Sci-Fi, Giallo e Comico, legge e guarda libri cult o di nuova uscita perchè la mente è un giardino che va mantenuto sempre rigoglioso e lussureggiante liberandolo dalle scorie tossiche della realtà attraverso la fantasia.
                                     </div>
+                                    <article class="message charAR quote">
+                                        <div class="message-body">
+                                            Se è vero che ogni libro è un viaggio, dobbiamo avere il coraggio di partire.
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
+                        </div>
+                </header>
 
-                        </div>
-                    </div>
-                </div>
             </div>
+            <button class="modal-close is-large" aria-label="close"></button>
         </div>
-    </section>
-    <section class="hero is-fullheight slide" id="wizard">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile mx-1">
-                        <div class="card charWZ">
-                            <div class="card-image">
-                                <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-128x128">
-                                            <img src="./img/char/wizard.jpg" alt="Mago Sviluppatore" class="CharAvatar">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-1">Mago </p>
-                                            <p class="subtitle is-2">Sviluppatore</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="tile is-father">
-                                        <div class="tile is-vertical is-child biog">
-                                            Il Nano è un personaggio che si occupa di ingegneria pratica, lavora sodo nelle miniere in lavori essenziali ma che nessuno vuole mai fare e con il suo ingegno e la sua arguzia
-                                            riesce a trovare sempre nuovi modi per riparare i materiali e le tecnologie con cui si confronta approtando modifiche per migliorarne il funzionamento o creare nuovi apparati
-                                            che ne esaltino le caratteristiche.
-                                        </div>
-                                        <div class="tile is-vertical is-child ">
-                                            <div id="wizardLevel">Livello Globale 6/10 </div>
-                                            <div id="wizardExp">Confidenza Attuale 5/10 </div>
-                                            <div id="wizard1">Sviluppo Backend 6/10 </div>
-                                            <div id="wizard2">Sviluppo Frontend 4/10 </div>
-                                            <div id="wizard3">Lettura e Comprensione codice 8/10 </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="bio">
-                                        In quanto sistemista amante dello sviluppo mi sono sempre appassionato alle sfide di automazione che spesso vengono considerate sviluppo di serire B
-                                        oppure dell'analisi della semplificazione dei processi sia in ambito interno,
-                                        per il monitoring dei nostri server, che per i clienti, andando a risolvere l'annoso problema della prolificazione dei softwares monofunzione.
-                                        Con il tempo appassionandomi anche alle nuove tecnologie e ai nuovi linguaggi di programmazione o iniziato a cercare sfide sempre più complesse dedicandomi
-                                        alla scrittura di API per far interagire tra loro hardware di vendor diversi o che in fase di progettazione non erano stati pensati per lo scambio dati con protocolli diversi
-                                        o oggetti diversi, riccorddendo spesso al reverse engineering.
-                                        Proprio per l'amore in questo campo vedo la formazione continua ed il continuo sperimentare come una necessità di sopravvivenza e quindi spesso mi dedico nel tempo libero
-                                        a ricercare nuove tipologie di hardware o a scrivere plugin o interi software per velocizzare alcune azioni ripetitive o far comunicare i nuovi devices che andiamo a testare dai clienti (scrittura di softwares o script per l'integrazione).
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     </div>
 
-    <section class="hero is-light is-fullheight wallpaper" id="knight">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/knight.jpg" alt="Guerriero SysAdmin">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Guerriero Sviluppatore</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio è appassionato di programmazione da sempre, con passione e
-                                        dedizione si impegna nell'apprendere le tecniche base e quelle avanzate per
-                                        trasformare poi le idee in codice e realizzare così le sue magie.
-                                    </div>
-                                    <div class="points">
-                                        <hr>
-                                        <div id="wizardLevel">Livello 4/10 </div>
-                                        <div id="wizardExp">Esperienza Attuale 5/10 </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="hero is-light is-fullheight wallpaper" id="dwarf">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/dwarf.jpg" alt="Nano System Integrator" class="CharAvatar">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-128x128">
-                                            <img src="./img/char/dwarf.jpg" alt="Nano System Integrator" class="CharAvatar">
-                                            </figure>
-                                        </div>
-                                        <div class="media-content">
-                                            <p class="title is-4">John Smith</p>
-                                            <p class="subtitle is-6">@johnsmith</p>
-                                        </div>
-                                        </div>
-                                    <div class="title">Nano System Integrator</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio attraverso lo studio costante di nuovi strumenti e nuovi materiali sfrutta le sue conoscenze per trovare sempre nuove soluzioni e nuove idee per
-                                        integrare strumenti e risolvere problemi dove si presentano.
-                                    </div>
-                                    <hr>
-                                    <div id="dwarfLevel">Livello 7/10 </div>
-                                        <div id="dwarfExp">Esperienza Attuale 9/10 </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/knight.jpg" alt="Guerriero SysAdmin">
-
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Guerriero SysAdmin</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio attraverso lo studio costante di nuovi strumenti e nuovi materiali sfrutta le sue conoscenze per trovare sempre nuove soluzioni e nuove idee per
-                                        integrare strumenti e risolvere problemi dove si presentano.
-                                    </div>
-                                    <hr>
-                                    <div id="warriorLevel">Livello 8/10 </div>
-                                    <div id="warriorExp">Esperienza Attuale 6/10 </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/archer.jpg" alt="Ranger Responsabile e Analista">
-
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Ranger Responsabile e Analista</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio attraverso lo studio costante di nuovi strumenti e nuovi materiali sfrutta le sue conoscenze per trovare sempre nuove soluzioni e nuove idee per
-                                        integrare strumenti e risolvere problemi dove si presentano.
-                                    </div>
-                                    <hr>
-                                    <div id="archerLevel">Livello 6/10 </div>
-                                    <div id="archerExp">Esperienza Attuale 7/10 </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/wizard.jpg" alt="Mago Sviluppatore" class="CharAvatar">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Mago Sviluppatore</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio è appassionato di programmazione da sempre, con passione e
-                                        dedizione si impegna nell'apprendere le tecniche base e quelle avanzate per
-                                        trasformare poi le idee in codice e realizzare così le sue magie.
-                                    </div>
-                                    <div class="points">
-                                        <hr>
-                                        <div id="wizardLevel">Livello 4/10 </div>
-                                        <div id="wizardExp">Esperienza Attuale 5/10 </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="hero is-light is-fullheight wallpaper" id="dwarf">
-        <div class="hero-body">
-            <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/knight.jpg" alt="Guerriero SysAdmin">
-
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Guerriero SysAdmin</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio attraverso lo studio costante di nuovi strumenti e nuovi materiali sfrutta le sue conoscenze per trovare sempre nuove soluzioni e nuove idee per
-                                        integrare strumenti e risolvere problemi dove si presentano.
-                                    </div>
-                                    <hr>
-                                    <div id="warriorLevel">Livello 8/10 </div>
-                                    <div id="warriorExp">Esperienza Attuale 6/10 </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/archer.jpg" alt="Ranger Responsabile e Analista">
-
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Ranger Responsabile e Analista</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio attraverso lo studio costante di nuovi strumenti e nuovi materiali sfrutta le sue conoscenze per trovare sempre nuove soluzioni e nuove idee per
-                                        integrare strumenti e risolvere problemi dove si presentano.
-                                    </div>
-                                    <hr>
-                                    <div id="archerLevel">Livello 6/10 </div>
-                                    <div id="archerExp">Esperienza Attuale 7/10 </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="tile mx-1">
-                        <div class="card char">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="./img/char/wizard.jpg" alt="Mago Sviluppatore" class="CharAvatar">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="title">Mago Sviluppatore</div>
-                                    <hr>
-                                    <div class="bio">
-                                        Questo personaggio è appassionato di programmazione da sempre, con passione e
-                                        dedizione si impegna nell'apprendere le tecniche base e quelle avanzate per
-                                        trasformare poi le idee in codice e realizzare così le sue magie.
-                                    </div>
-                                    <div class="points">
-                                        <hr>
-                                        <div id="wizardLevel">Livello 4/10 </div>
-                                        <div id="wizardExp">Esperienza Attuale 5/10 </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <div class="progress" id="dwarfINT"></div>
-
-    <heroSection>
-        <Dwarf>Slide del Nano</Dwarf>
-        <Wizard>Slide del Mago</Wizard>
-        <Warrior>Slide del Guerriero</Warrior>
-        <Ranger>Slide del Ranger</Ranger>
-    </heroSection>
     <bio>Sezione Biografica</bio>
     <contacts>Sezione dei contatti e dei social</contacts>
     <footer>Semplice copyright e made with love</footer>

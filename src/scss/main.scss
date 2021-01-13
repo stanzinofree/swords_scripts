@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400');
 @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope:400');
 
+// Fontawesome
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-pro/webfonts" !default;
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/light";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/duotone";
+@import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands";
+
+
+
 // Definizione dei fonts
 $family-primary: "Berkshire Swash";
 $family-secondary: "Annie Use Your Telescope";
@@ -66,16 +75,21 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.14'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     overflow: scroll;
     height: 100vh;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
+    @include from($desktop){
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        scroll-snap-type: y mandatory;
+    }
 }
 
-section {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start;
+@include from($desktop){
+    section {
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-align: start;
+    }
 }
+
 
 .img-white {
     background-color: $colore1-con;
@@ -86,156 +100,130 @@ section {
 
 }
 
-.char {
-    background-color: $sand;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px #000000;
-    border: 2px solid $charcoal;
-    .card-image {
-        border-bottom: 2px solid $charcoal;
-    }
-    .media{
-        background-color: $sand;
-    }
-    .card-content{
-        background-color: white;
-        height: 100%;
-        .title {
-            font-style: italic;
-            font-size: 1.3rem;
+
+
+@mixin personaggio($color){
+    background-color: lighten($color, 20%);
+        .card {
+            border-radius: 8px;
+            box-shadow: 8px 8px 16px #000000;
+            border: 2px solid $white;
+            background-color: $color;
+
         }
-        hr {
-            border: 1px solid $charcoal;
+        .card-image {
+            border-bottom: 2px solid $charcoal;
         }
-        .bio {
+        .media {
+            .title,
+            .subtitle {
+                color: white;
+                text-shadow: 1px 1px 2px #000000;
+            }
+        }
+        .media-content {
+            .title {
+                margin-top: 5%;
+            }
+            .subtitle {
+                font-size: 1.8rem;
+                ;
+            }
+        }
+        .card-content {
+            background-color: white;
+            height: 100%;
             font-family: $family-secondary;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+            .bio {
+                font-family: $family-secondary;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+            .tratti {
+                font-family: $family-primary;
+                text-align: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.2rem;
+            }
+            .biog {
+                font-family: $family-secondary;
+                //padding-right: 30px;
+                font-size: 1.4rem;
+                font-style: italic;
+                text-align: left;
+                ul {
+                    list-style: none;
+                }
+            }
+            .title {
+                font-style: italic;
+                font-size: 1.3rem;
+            }
+            hr {
+                border: 1px dashed $charcoal;
+            }
+            .dwarfBars {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .caratteristiche {
+                font-family: $family-secondary;
+                font-size: 1.4rem;
+                margin-bottom: 3%;
+            }
+            .quote {
+                font-weight: bold;
+                .message-body {
+                    background-color:$color;
+                    color: $white;
+                    border-color: lighten($color, 40%);
+                }
+            }
+
         }
-
-    }
-    img {
-        border-radius: 50%;
-        padding: 10px;
-    }
-}
-
-.charDW {
-    background-color: $sand;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px #000000;
-    border: 4px solid $white;
-
-    .card-image {
-        border-bottom: 2px solid $charcoal;
-    }
-
-    .media {
-        background-color: #917553;
-        .title, .subtitle {
+        img {
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .explain {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
+            text-shadow: 2px 2px 4px $colore1;
+            padding: 10%;
+            font-size: 1.4rem;
+            ::first-letter {
+                font-size: 4rem;
+                color: $color;
+                text-shadow: 2px 2px 4px white;
+            }
         }
-    }
-
-    .media-content {
-        .title{
-            margin-top:1px;
-        }
-    }
-
-    .card-content {
-        background-color: white;
-        height: 100%;
-
-        .bio {
-            font-family: $family-secondary;
-            font-size: 1.6rem;
-            font-weight: bold;
-        }
-
-        .biog{
-            font-family: $family-secondary;
-            padding-right: 40px;
-            font-size: 1.6rem;
-            font-style: italic;
-        }
-
-        .title {
-            font-style: italic;
-            font-size: 1.3rem;
-        }
-
-        hr {
-            border: 1px solid $charcoal;
-        }
-    }
-
-    img {
-        border-radius: 50%;
-        padding: 10px;
-    }
-
-    #dwarfLevel {
-        color: '#0047ab',
-    }
 }
 
-.charWZ {
-    background-color: $sand;
-    border-radius: 8px;
-    box-shadow: 2px 2px 4px #000000;
-    border: 4px solid $white;
 
-    .card-image {
-        border-bottom: 2px solid $charcoal;
-    }
-
-    .media {
-        background-color: $sand;
-
-        .title,
-        .subtitle {
-            color: white;
-        }
-    }
-
-    .media-content {
-        .title {
-            margin-top: 1px;
-        }
-    }
-
-    .card-content {
-        background-color: white;
-        height: 100%;
-
-        .bio {
-            font-family: $family-secondary;
-            font-size: 1.6rem;
-            font-weight: bold;
-        }
-
-        .biog {
-            font-family: $family-secondary;
-            padding-right: 40px;
-            font-size: 1.6rem;
-            font-style: italic;
-        }
-
-        .title {
-            font-style: italic;
-            font-size: 1.3rem;
-        }
-
-        hr {
-            border: 1px solid $charcoal;
-        }
-    }
-
-    img {
-        border-radius: 50%;
-        padding: 10px;
-    }
+#DWARF {
+    @include personaggio(#3D3D3D)
 }
+
+#WIZARD {
+    @include personaggio(#66285b)
+}
+
+#kNIGHT {
+    @include personaggio(#7e0d00)
+}
+
+#ARCHER{
+    @include personaggio(#296307)
+}
+
+#HACKER {
+    @include personaggio(#0e4353)
+}
+
 
 .is-horizontal-center {
     justify-content: center;
@@ -251,7 +239,7 @@ section {
         font-size: 3em;
     }
     .subtitle {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     p {
         font-size: 2em;
@@ -263,8 +251,21 @@ section {
     font-size: 1.5em;
 }
 
+
 /* Progress Bar Skills */
 .progress>svg {
     height: 100%;
     display: block;
+}
+
+/*SCroolBar*/
+body {
+    ::-webkit-scrollbar {
+        height: 10px;
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $colore1;
+    }
 }
