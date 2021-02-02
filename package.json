@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html && http-serve dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@vizuaalog/bulmajs": "^0.12.0",
+    "http-serve": "^1.0.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^4.0.2",
     "sass": "^1.32.0"
@@ -20,6 +21,10 @@
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.15.1",
     "bulma": "^0.9.1",
-    "progressbar.js": "^1.1.0"
+    "bulma-social": "^2.0.0",
+    "parcel-optimizer-imagemin": "^1.0.0",
+    "parcel-plugin-compress": "^2.0.2",
+    "progressbar.js": "^1.1.0",
+    "sharp": "^0.27.0"
   }
 }

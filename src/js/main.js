@@ -49,6 +49,17 @@ document.querySelector('#hacker_modal_button').addEventListener('click', functio
     modalTwo.open();
 });
 
+document.querySelector('#mailForm_button').addEventListener('click', function(e) {
+    var modalTwo = Bulma('#mailForm').modal();
+    modalTwo.open();
+});
+
+document.querySelector('#openContact').addEventListener('click', function(e) {
+    var modalTwo = Bulma('#mailForm').modal();
+    modalTwo.open();
+});
+
+
 
 var ShellStyle = "color:#7d92fb;font-weight:bold;";
 var BrandStyle = "font-size:34px; font-weight:200; letter-spacing:0.02em; line-height:1.4em; font-family:helvetica,arial; color:rgba(0,0,0,0.9);";

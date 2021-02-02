@@ -1,25 +1,25 @@
 @charset "utf-8";
 
-// Import a Google Font
-//@import url('https://fonts.googleapis.com/css?family=MedievalSharp:400,700');
+// Prima cosa importiamo Bulma Social
+@import "../../node_modules/bulma-social/bulma-social";
+
+
+// Importiamo i fonts
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400');
 @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope:400');
 
-// Fontawesome
+// Importiamo FontAwesome
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-pro/webfonts" !default;
 @import "../../node_modules/@fortawesome/fontawesome-pro/scss/fontawesome";
 @import "../../node_modules/@fortawesome/fontawesome-pro/scss/light";
 @import "../../node_modules/@fortawesome/fontawesome-pro/scss/duotone";
 @import "../../node_modules/@fortawesome/fontawesome-pro/scss/brands";
 
-
-
-// Definizione dei fonts
+// Definiziamo i fonts di default
 $family-primary: "Berkshire Swash";
 $family-secondary: "Annie Use Your Telescope";
 
 // Definizione dello schema colori custom
-
 $charcoal: #36454F;
 $charcoal-invert: findColorInvert($charcoal);
 $santorini: #416d83;
@@ -29,8 +29,8 @@ $sand-invert: findColorInvert($sand);
 $cobalto: #0047ab;
 $cobalto-invert: findColorInvert($cobalto);
 
+//Iniettiamo in Bulma alcuni codici colori
 $custom-colors: ("charcoal": ($charcoal, $charcoal-invert), "santorini": ($santorini, santorini-invert), "sand": ($sand, $sand-invert), "cobalto": ($cobalto, $cobalto-invert));
-
 
 // Creo la palette dinamica
 @import "./color_mixin.scss";
@@ -49,6 +49,9 @@ $info: $colore3;
 $danger: $colore4;
 
 $navbar-height: 4rem;
+$footer-background-color: $colore1;
+$footer-color: white;
+$footer-padding: 2rem 1rem 2rem;
 
 // Import dei file di Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
@@ -59,6 +62,7 @@ $navbar-height: 4rem;
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/helpers/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
+
 
 
 // Regole Custom
@@ -74,6 +78,7 @@ body {
     background-color: #6d674d;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.14'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     overflow: scroll;
+    overflow-x: hidden;
     height: 100vh;
     @include from($desktop){
         scroll-snap-type: mandatory;
@@ -258,6 +263,15 @@ body {
     display: block;
 }
 
+#socialbar{
+    display: flex;
+    justify-content: center;
+    tile {
+        margin-bottom: 30px;
+    }
+}
+
+
 /*SCroolBar*/
 body {
     ::-webkit-scrollbar {
@@ -267,5 +281,13 @@ body {
 
     ::-webkit-scrollbar-thumb {
         background: $colore1;
+    }
+}
+
+footer {
+    a { color : white}
+    a:hover {
+        color: $colore1;
+        background-color: white;
     }
 }

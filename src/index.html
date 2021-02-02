@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chips & Scripts</title>
+    <title>Swords & Scripts</title>
     <link rel="stylesheet" href="./scss/main.scss">
 </head>
-
 <body class="has-navbar-fixed-top">
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="./img/alex.png" alt="La mia faccia cartoon">
+            <a class="navbar-item" href="http://stanzinodemo.it/">
+                <img src="./img/alex400.png" alt="La mia faccia cartoon">
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navBar">
@@ -24,12 +22,8 @@
 
         <div id="navBar" class="navbar-menu navbar-end">
             <div class="navbar-start">
-                <a class="navbar-item" href="/">
-                    Home
-                </a>
-
                 <a class="navbar-item" href="#intro">
-                    Intro
+                    Home
                 </a>
 
                 <div class="navbar-item has-dropdown">
@@ -39,29 +33,29 @@
 
                     <div class="navbar-dropdown">
                         <a class="navbar-item" href="#DWARF">
-                            Nano System Integrator
+                            Nano
                         </a>
                         <a class="navbar-item" href="#WIZARD">
-                            Mago Sviluppatore
+                            Mago
                         </a>
                         <a class="navbar-item" href="#kNIGHT">
-                            Guerriero SysAdmin
+                            Guerriero
                         </a>
                         <a class="navbar-item" href="#ARCHER">
-                            Ranger Responsabile e Analista
+                            Ranger
                         </a>
                     </div>
                 </div>
 
-                <a class="navbar-item">
-                    Bio
+                <a class="navbar-item" href="#social">
+                    Social
                 </a>
             </div>
 
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button">
+                        <a class="button" id="openContact">
                             <strong>Contatti</strong>
                         </a>
                     </div>
@@ -75,12 +69,12 @@
                 <div class="container">
                     <div class="tile is-ancestor">
                         <div class="tile-4">
-                            <img src="./img/alex.png" alt="La mia faccia cartoon" class="img-white">
+                            <img src="./img/alex400.png" alt="La mia faccia cartoon" class="img-white">
                         </div>
                         <div class="tile-8">
                             <div class="section intro">
                                 <h1 class="title intro">
-                                    Chips & Scripts
+                                    Swords & Scripts
                                 </h1>
                                 <h2 class="subtitle intro">
                                     Nerd e Fantasy al servizio del mondo IT
@@ -89,10 +83,11 @@
                                 <p class="is-family-secondary">Ciao, sono Alessandro, e vorrei parlarvi di me unendo le
                                     mie
                                     grandi passioni vale a dire la letteratura fantasy ed il mondo IT.</p>
-                                <p class="is-family-secondary" id="hacker_modal_button">Parodiando il celeberrimo
+                                <p class="is-family-secondary">Parodiando il celeberrimo
                                     <span>"Dungeons &
                                         Dragons"</span>
-                                    ho deciso di realizzare un portfolio con tanto di eroi (ed Easter Egg) e relative peculiarità
+                                    ho deciso di realizzare un portfolio con tanto di eroi (ed Easter Egg <i
+                                        id="hacker_modal_button" class="fad fa-egg"></i>) e relative peculiarità
                                     applicate
                                     al mondo IT che mettano in evidenza le mie attitudini sfruttando i personaggi.</p>
                             </div>
@@ -111,7 +106,7 @@
                                     <div class="media charDW">
                                         <div class="media-left">
                                             <figure class="image is-128x128">
-                                                <img src="./img/char/dwarf.jpg" alt="Nano System Integrator"
+                                                <img src="./img/char/dwarf200.jpg" alt="Nano System Integrator"
                                                     class="CharAvatar">
                                             </figure>
                                         </div>
@@ -193,7 +188,7 @@
                                         <div class="media charWZ">
                                             <div class="media-left">
                                                 <figure class="image is-128x128">
-                                                    <img src="./img/char/wizard.jpg" alt="Mago Sviluppatore"
+                                                    <img src="./img/char/wizard200.jpg" alt="Mago Sviluppatore"
                                                         class="CharAvatar">
                                                 </figure>
                                             </div>
@@ -225,12 +220,14 @@
                                             <hr>
                                             <div class="caratteristiche">
                                                 <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
-                                                Paziente, studioso, metodico, il tempo non ha importanza se paragonato alla sapienza.
+                                                Paziente, studioso, metodico, il tempo non ha importanza se paragonato
+                                                alla sapienza.
                                                 Riesce tramite fomule magiche a trasfmorare i pensieri in oggetti reali.
                                             </div>
                                             <article class="message charWZ quote">
                                                 <div class="message-body">
-                                                    Tutto quello che la mente riesce ad immaginare può essere creato.
+                                                    La vera magia non è nel realizzare le cose ma nel sapere immaginare
+                                                    scenari e ogetti che ancora non esistono.
                                                 </div>
                                             </article>
                                         </div>
@@ -241,9 +238,19 @@
                             <div class="tile is-8 description">
                                 <div class="explain">
                                     <p>
-                                        Sin da piccolo, quando con mio padre digitavamo infinite stringhe di codice in Basic sulla tastiera dello Spectrum, ero attratto dalla magia che portava quelle stringhe di testo assurde e astruse a trasformarsi in coniglietti saltellanti sullo schermo. Negli anni questa passione mi ha portato ad approfondire da autodidatta il mondo dello sviluppo software partendo dalle macro di Office per calcolare le classifiche del fantacalcio a dei veri e propri gestionali Access Based per gestire la raccolta dati di un call center.
+                                        Sin da piccolo, quando con mio padre digitavamo infinite stringhe di codice in
+                                        Basic sulla tastiera dello Spectrum, ero attratto dalla magia che portava quelle
+                                        stringhe di testo assurde e astruse a trasformarsi in coniglietti saltellanti
+                                        sullo schermo. Negli anni questa passione mi ha portato ad approfondire da
+                                        autodidatta il mondo dello sviluppo software partendo dalle macro di Office per
+                                        calcolare le classifiche del fantacalcio a dei veri e propri gestionali Access
+                                        Based per gestire la raccolta dati di un call center.
 
-La sensazione di potenza quando i desideri dei clienti prendono forma e diventano la loro soddisfazione ancora oggi mi lascia contento come un bambino in un negozio di giocattoli e quindi per continuare a stupire continuo a studiare ed informarmi sulle tendenze, sull'evoluzione dei linguaggi e continuo a sperimentare e sbagliare per migliorare continuamente.</p>
+                                        La sensazione di potenza quando i desideri dei clienti prendono forma e
+                                        diventano la loro soddisfazione ancora oggi mi lascia contento come un bambino
+                                        in un negozio di giocattoli e quindi per continuare a stupire continuo a
+                                        studiare ed informarmi sulle tendenze, sull'evoluzione dei linguaggi e continuo
+                                        a sperimentare e sbagliare per migliorare continuamente.</p>
                                 </div>
 
                             </div>
@@ -263,7 +270,7 @@ La sensazione di potenza quando i desideri dei clienti prendono forma e diventan
                                         <div class="media charKN">
                                             <div class="media-left">
                                                 <figure class="image is-128x128">
-                                                    <img src="./img/char/knight.jpg" alt="Guerriero SysAdmin">
+                                                    <img src="./img/char/knight200.jpg" alt="Guerriero SysAdmin">
                                                 </figure>
                                             </div>
                                             <div class="media-content">
@@ -294,12 +301,15 @@ La sensazione di potenza quando i desideri dei clienti prendono forma e diventan
                                             <hr>
                                             <div class="caratteristiche">
                                                 <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
-                                                Umile e infaticabile è sempre al servizio di chi ha bisogno e dei più deboli.
-                                                Sempre alla ricerca del male da sconfiggere o di una principessa da salvare anche se questo vuol dire non riposarsi mai per giorni.
+                                                Umile e infaticabile è sempre al servizio di chi ha bisogno e dei più
+                                                deboli.
+                                                Sempre alla ricerca del male da sconfiggere o di una principessa da
+                                                salvare anche se questo vuol dire non riposarsi mai per giorni.
                                             </div>
                                             <article class="message charKN quote">
                                                 <div class="message-body">
-                                                    Non importa chi tu sia o che cosa tu abbia fatto ma se hai in pericolo io ci sarò.
+                                                    Non importa quali siti hai visitato per prendere quel malware, io
+                                                    ripulirò quel pc.
                                                 </div>
                                             </article>
                                         </div>
@@ -310,13 +320,24 @@ La sensazione di potenza quando i desideri dei clienti prendono forma e diventan
                             <div class="tile is-8 description">
                                 <div class="explain">
                                     <p>
-                                        Appassionato e caparbio, da sempre mi occupo dell'installazione e configurazione dei pc sia in ambito desktop che server, come per gli altri aspetti dell'informatica continuo ad informarmi e formarmi sulle nuove tecnologie, sui nuovi sistemi operativi e sulle prassi di sicurezza che possono aiutare a prevenire problemi di compromissione o di performance sui dispositivi.
+                                        Appassionato e caparbio, da sempre mi occupo dell'installazione e configurazione
+                                        dei pc sia in ambito desktop che server, come per gli altri aspetti
+                                        dell'informatica continuo ad informarmi e formarmi sulle nuove tecnologie, sui
+                                        nuovi sistemi operativi e sulle prassi di sicurezza che possono aiutare a
+                                        prevenire problemi di compromissione o di performance sui dispositivi.
 
-Windows, Gnu\Linux o MacOS non fa differenza, una volta che si sono apprese le basi e si ha una shell non ci sono sistemi operativi che non possano essere installati, configurati e manutenuti, attraverso analisi dei logs e dei processi con l'aggiunta di script che aiutino nelle quotidiane e ripetitive operazioni.
+                                        Windows, Gnu\Linux o MacOS non fa differenza, una volta che si sono apprese le
+                                        basi e si ha una shell non ci sono sistemi operativi che non possano essere
+                                        installati, configurati e manutenuti, attraverso analisi dei logs e dei processi
+                                        con l'aggiunta di script che aiutino nelle quotidiane e ripetitive operazioni.
 
-Con pazienza e disponibilità sono sempre al servizio degli utenti con la consapevolezza che se hanno bisogno di un supporto vuol dire che reputano la mia professionalità rilevante e utile non giudicando le loro scelte o i loro comportamenti (in fatto di navigazione e acquisti di software o hardware) ma cerco solo di aiutarli a trarre il meglio da quello che hanno a disposizione.
+                                        Con pazienza e disponibilità sono sempre al servizio degli utenti con la
+                                        consapevolezza che se hanno bisogno di un supporto vuol dire che reputano la mia
+                                        professionalità rilevante e utile non giudicando le loro scelte o i loro
+                                        comportamenti (in fatto di navigazione e acquisti di software o hardware) ma
+                                        cerco solo di aiutarli a trarre il meglio da quello che hanno a disposizione.
 
-</p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +356,7 @@ Con pazienza e disponibilità sono sempre al servizio degli utenti con la consap
                                         <div class="media charAR">
                                             <div class="media-left">
                                                 <figure class="image is-128x128">
-                                                    <img src="./img/char/archer.jpg"
+                                                    <img src="./img/char/archer200.jpg"
                                                         alt="Ranger Analista e Responsabile IT" class="CharAvatar">
                                                 </figure>
                                             </div>
@@ -367,12 +388,16 @@ Con pazienza e disponibilità sono sempre al servizio degli utenti con la consap
                                             <hr>
                                             <div class="caratteristiche">
                                                 <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
-                                                Figura molto sottovalutata, silenziosa, esperta del territorio in cui agisce. Ama pianificare ogni dettaglio sfruttando la conoscenza dei propri compagni e
-                                                della conoscenza dell'ambiente che lo circonda per capovolgere l'esito di ogni battaglia.
+                                                Figura molto sottovalutata, silenziosa, esperta del territorio in cui
+                                                agisce. Ama pianificare ogni dettaglio sfruttando la conoscenza dei
+                                                propri compagni e
+                                                della conoscenza dell'ambiente che lo circonda per capovolgere l'esito
+                                                di ogni battaglia.
                                             </div>
                                             <article class="message charAR quote">
                                                 <div class="message-body">
-                                                    Non importa quanto sia difficile la sfida, pianificando bene ogni cosa può essere affrontata.
+                                                    Non importa quanto sia difficile la sfida, pianificando bene ogni
+                                                    cosa può essere affrontata.
                                                 </div>
                                             </article>
                                         </div>
@@ -383,13 +408,26 @@ Con pazienza e disponibilità sono sempre al servizio degli utenti con la consap
                             <div class="tile is-8 description">
                                 <div class="explain">
                                     <p>
-                                        Avendo da sempre un carattere mite ma deciso, nel tempo in ogni lavoro, divento piano piano un punto fermo nell'ambito delle opinioni da tenere in considerazione sulla gestione e sulle scelte da fare sia progettuali che pratiche. In particolare in questo ultimo lavoro ho ricevuto l'incarico di gestire il personale IT per le assistenze esterne e per la gestione dell'infrastruttura interna.
+                                        Avendo da sempre un carattere mite ma deciso, nel tempo in ogni lavoro, divento
+                                        piano piano un punto fermo nell'ambito delle opinioni da tenere in
+                                        considerazione sulla gestione e sulle scelte da fare sia progettuali che
+                                        pratiche. In particolare in questo ultimo lavoro ho ricevuto l'incarico di
+                                        gestire il personale IT per le assistenze esterne e per la gestione
+                                        dell'infrastruttura interna.
 
-Avendo anche passione per l'aspetto di sviluppo e per le nuove tecnologie occupo anche il ruolo di progettazione e scelta dei "side projects" per la parte ricerca e sviluppo oltre che per la parte di analisi e progettazione delle soluzioni di integrazione per i nostri clienti.
+                                        Avendo anche passione per l'aspetto di sviluppo e per le nuove tecnologie occupo
+                                        anche il ruolo di progettazione e scelta dei "side projects" per la parte
+                                        ricerca e sviluppo oltre che per la parte di analisi e progettazione delle
+                                        soluzioni di integrazione per i nostri clienti.
 
-Sicuramente il carattere mite e tendente all'ascolto fanno si che riesca a cogliere più dettagli rispetto all'ascoltatore comune e unito alla riflessività e alla capacità di analizzare ogni aspetto dei contesti, a mo di intelligenza artificiale, analizzando i possibili risvolti di ogni scelta vengo tenuto in considerazione durante l'esposizione delle mie opinioni poichè frutto di lunghi e meditati ragionamenti.
+                                        Sicuramente il carattere mite e tendente all'ascolto fanno si che riesca a
+                                        cogliere più dettagli rispetto all'ascoltatore comune e unito alla riflessività
+                                        e alla capacità di analizzare ogni aspetto dei contesti, a mo di intelligenza
+                                        artificiale, analizzando i possibili risvolti di ogni scelta vengo tenuto in
+                                        considerazione durante l'esposizione delle mie opinioni poichè frutto di lunghi
+                                        e meditati ragionamenti.
 
-</p>
+                                    </p>
                                 </div>
 
                             </div>
@@ -401,71 +439,196 @@ Sicuramente il carattere mite e tendente all'ascolto fanno si che riesca a cogli
         <div id="hacker_modal" class="modal">
             <di class="modal-background"></di>
             <div class="modal-card">
-
                 <header class="modal-card-head">
                     <p class="modal-card-title">Easter EGG</p>
                     <button class="delete" aria-label="close"></button>
                 </header>
                 <header class="modal-card-body" id="HACKER">
-                         <div class="card charDW">
-                            <div class="card-image">
-                                <div class="media charAR">
-                                    <div class="media-left">
-                                        <figure class="image is-128x128">
-                                            <img src="./img/char/hacker.jpg" alt="Ethical Hacker"
-                                                class="CharAvatar">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-1">Hacker </p>
-                                        <p class="subtitle is-2">Nerd Smanettone</p>
-                                    </div>
+                    <div class="card charDW">
+                        <div class="card-image">
+                            <div class="media charAR">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="./img/char/hacker200.jpg" alt="Ethical Hacker" class="CharAvatar">
+                                    </figure>
                                 </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="tile is-father">
-                                        <div class="tile is-vertical is-child is-5 biog">
-                                            <h6 class="tratti">QUALITA'</h6>
-                                            <ul>
-                                                <li><i class="fad fa-raygun"></i> Introverso</li>
-                                                <li><i class="fad fa-raygun"></i> Nerd</li>
-                                                <li><i class="fad fa-raygun"></i> Smanettone</li>
-                                            </ul>
-                                        </div>
-                                        <div class="tile is-vertical is-child dwarfBars">
-                                            <h6 class="tratti">STATISTICHE</h6>
-                                            <div id="hackerLevel">Livello Globale 6/10 </div>
-                                            <div id="hacker1">Nerdosità 6/10 </div>
-                                            <div id="hacker2">Smanettosità 8/10 </div>
-                                            <div id="hacker3">Sicurezza 7/10 </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="caratteristiche">
-                                        <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
-                                        Nerd e Smanettone, cosa dire di più? Amante dei generi Fantasy, Sci-Fi, Giallo e Comico, legge e guarda libri cult o di nuova uscita perchè la mente è un giardino che va mantenuto sempre rigoglioso e lussureggiante liberandolo dalle scorie tossiche della realtà attraverso la fantasia.
-                                    </div>
-                                    <article class="message charAR quote">
-                                        <div class="message-body">
-                                            Se è vero che ogni libro è un viaggio, dobbiamo avere il coraggio di partire.
-                                        </div>
-                                    </article>
+                                <div class="media-content">
+                                    <p class="title is-1">Hacker </p>
+                                    <p class="subtitle is-2">Nerd Smanettone</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="tile is-father">
+                                    <div class="tile is-vertical is-child is-5 biog">
+                                        <h6 class="tratti">QUALITA'</h6>
+                                        <ul>
+                                            <li><i class="fad fa-raygun"></i> Introverso</li>
+                                            <li><i class="fad fa-raygun"></i> Nerd</li>
+                                            <li><i class="fad fa-raygun"></i> Smanettone</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tile is-vertical is-child dwarfBars">
+                                        <h6 class="tratti">STATISTICHE</h6>
+                                        <div id="hackerLevel">Livello Globale 6/10 </div>
+                                        <div id="hacker1">Nerdosità 6/10 </div>
+                                        <div id="hacker2">Smanettosità 8/10 </div>
+                                        <div id="hacker3">Sicurezza 7/10 </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="caratteristiche">
+                                    <h6 class="tratti">BIOGRAFIA & CITAZIONE</h6>
+                                    Nerd e Smanettone, cosa dire di più? Amante dei generi Fantasy, Sci-Fi, Giallo e
+                                    Comico, legge e guarda libri cult o di nuova uscita perchè la mente è un giardino
+                                    che va mantenuto sempre rigoglioso e lussureggiante liberandolo dalle scorie
+                                    tossiche della realtà attraverso la fantasia.
+                                </div>
+                                <article class="message charAR quote">
+                                    <div class="message-body">
+                                        Datemi il codice sorgente e vi modificherò tutto, anche la vita stessa.
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </header>
-
+                <footer class="modal-card-foot">
+                    Espansione Segreta al Deck Base
+                </footer>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
         </div>
+        <section class="hero is-fullheight slide" id="social">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tile is-ancestor">
+                        <div class="tile-8">
+                            <div class="section intro">
+                                <h1 class="title intro">
+                                    Contatti
+                                </h1>
+                                <h2 class="subtitle intro">
+                                    Come seguirmi o contattarmi
+                                </h2>
+                                <hr>
+                                <p class="is-family-secondary">Sicuramente non sono il più social del mondo, amo leggere
+                                    ma difficilmente scrivo però se siete curiosi potete comunque seguirmi.</p>
+                                <p class="is-family-secondary" style="margin-top: 15px;"> <button
+                                        class="button is-primary is-large modal-button" id="mailForm_button">In
+                                        alternativa scrivmi.</button></p>
+                                <div class="modal" id="mailForm">
+                                    <div class="modal-background"></div>
+                                    <div class="modal-card">
+                                        <header class="modal-card-head">
+                                            <p class="modal-card-title">Scrivimi</p>
+                                            <button class="delete" aria-label="close"></button>
+                                        </header>
+                                        <header class="modal-card-body">
+                                            <form action="https://formsubmit.co/alessandro.middei@gmail.com"
+                                                method="POST">
+                                                <div class="field">
+                                                    <label class="label" style="font-size: 1.3rem">Nome</label>
+                                                    <div class="control">
+                                                        <input class="input" type="text" name="Nome"
+                                                            placeholder="e.g Alex Smith">
+                                                    </div>
+                                                </div>
+
+                                                <div class="field">
+                                                    <label class="label" style="font-size: 1.3rem">Email</label>
+                                                    <div class="control">
+                                                        <input class="input" type="email" name="Email"
+                                                            placeholder="e.g. alexsmith@gmail.com">
+                                                    </div>
+                                                </div>
+
+                                                <div class="field">
+                                                    <label class="label" style="font-size: 1.3rem">Messaggio</label>
+                                                    <div class="control">
+                                                        <input class="input" type="text" name="Messaggio"
+                                                            placeholder="Ciao Mi piace il tuo sito">
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="_subject"
+                                                    value="Contatto da portfolio Start2Impact!">
+                                                <input type="text" name="_honey" style="display:none">
+                                                <input type="hidden" name="_template" value="box">
+                                                <div class="control">
+                                                    <button class="button is-primary is-medium">Invia</button>
+                                                </div>
+                                            </form>
+                                        </header>
+                                        <footer class="modal-card-foot">
+                                        </footer>
+                                    </div>
+                                    <div class="modal-content">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile is-parent is-vertical" id="socialbar">
+                            <tile>
+                                <a class="button is-large is-bitbucket is-fullwidth"
+                                    href="https://bitbucket.org/alessandro_middei/" target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-bitbucket"></i>
+                                    </span>
+                                    <span>alessandro_middei</span>
+                                </a>
+                            </tile>
+                            <tile>
+                                <a class="button is-large is-linkedin is-fullwidth"
+                                    href="https://www.linkedin.com/in/stanzinofree/" target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </span>
+                                    <span>stanzinofree</span>
+                                </a>
+                            </tile>
+
+                            <tile>
+                                <a class="button is-large is-twitter is-fullwidth" href="https://twitter.com/smilzao"
+                                    target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>Smilzao</span>
+                                </a>
+                            </tile>
+                            <tile>
+                                <a class="button is-large is-instagram is-fullwidth"
+                                    href="https://www.instagram.com/smilzao/?hl=it" target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                    <span>Smilzao</span>
+                                </a>
+                            </tile>
+                            <tile>
+                                <a class="button is-large is-github is-fullwidth" href="https://github.com/stanzinofree"
+                                    target="_blank">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>stanzinofree</span>
+                                </a>
+                            </tile>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer is-dark">
+                <div class="content has-text-centered">
+                    <p>
+                        Made with with <i class="fad fa-heart"></i> by <a href="https://stanzinofree.net">Alessandro
+                            Middei</a>.
+                    </p>
+                </div>
+            </footer>
+        </section>
     </div>
-
-    <bio>Sezione Biografica</bio>
-    <contacts>Sezione dei contatti e dei social</contacts>
-    <footer>Semplice copyright e made with love</footer>
     <script src="./js/main.js"></script>
-
 </body>
-
 </html>
